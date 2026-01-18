@@ -486,8 +486,8 @@ a {
   color: lightskyblue;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   transition: transform 0.3s;
-  max-width: 320px;
-  min-height: 200px;
+  max-width: 340px;
+  max-height: 220px;
   margin: 0 auto;
 }
 
@@ -501,12 +501,11 @@ a {
 }
 
 .project-card p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: lightgray;
 }
 
 .project-card .tech-stack {
-  font-style: italic;
   font-size: 0.9rem;
   color: lightskyblue;
 }
@@ -552,5 +551,3 @@ a {
 .gap {
   margin: 20px;
 }
-
-/* for contact.html */
