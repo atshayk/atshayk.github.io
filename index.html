@@ -1,153 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Anis Timur Shayk's portfolio showcasing skills, projects, and journey as a fullstack developer.">
-        <meta name="keywords" content="Anis Timur Shayk, Fullstack Developer, Portfolio, Projects, Skills, Web Development, Software Engineer">
-        <meta name="author" content="Anis Timur Shayk">
-        <title>atshayk | Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://kit.fontawesome.com/97cadbde70.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
-    </head>
-    <body>
-            <nav>
-                <ul>
-                    <li><a href="index.html"><i class='fas fa-home'></i> Home</a></li>
-                    <li><a href="about.html"><i class='fas fa-smile'></i> About</a></li>
-                    <li><a href="projects.html"><i class='fas fa-tools'></i> Projects</a></li>
-                    <li><a href="blog.html"><i class='fas fa-newspaper'></i> Blog</a></li>
-                    <li><a href="contact.html"><i class='fas fa-mug-hot'></i> Contact</a></li>
-                </ul>
-            </nav>
-            <main>
-                <h2> Welcome! Here's my business card. </h2>
-                <section id="card">
-                    <div class="card-wrapper">
-                    <div class="card" onclick="this.classList.toggle('flipped')">
-                        <div class="card-face card-front">
-                        <h1>Anis Timur Shayk</h1>
-                        <p>Fullstack Developer </p>
-                        <div class="card-icons">
-                            <a href="mailto:anistimurshayk@gmail.com"><i class="fas fa-envelope"></i></a>
-                            <a href="https://github.com/atshayk" target="_blank"><i class="fab fa-github-alt"></i></a>
-                            <a href="https://linkedin.com/in/atshayk" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                        </div>
-                        <div class="card-face card-back">
-                        <p>I work with webdev, cysec & data.</p>
-                        <p>Tinkering with indie game dev and art.</p>
-                        <div class="card-links">
-                            <a href="projects.html"><i class='fas fa-tools'></i> View my Projects</a>
-                            <a href="blog.html"><i class='fas fa-newspaper'></i> Read my Blog</a>
-                            <a href="contact.html"><i class='fas fa-mug-hot'></i> Contact Me</a>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-                <section id="skills">
-                <h2>Skills & Tools</h2>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
-                    <div class="skill-card"><i class="fa-brands fa-css3"></i></i> CSS</div>
-                    <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
-                    <div class="skill-card"><i class="fab fa-react"></i> React</div>
-                    <div class="skill-card"><i class="fab fa-node-js"></i> Node.js</div>
-                    <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
-                    <div class="skill-card"><i class="devicon-mongodb-plain"></i> MongoDB</div>
-                    <div class="skill-card"><i class="fab fa-github"></i> GitHub</div>
-                    <div class="skill-card"><i class="fab fa-python"></i> Python</div>
-                    <div class="skill-card"><i class="fab fa-java"></i> Java</div>
-                    <div class="skill-card"><i class="devicon-kotlin-plain"></i> Kotlin</div>
-                    <div class="skill-card"><i class="fa-brands fa-dart-lang"></i> Dart</div>
-                    <div class="skill-card"><i class="fa-brands fa-golang"></i> Golang </div>
-                    <div class="skill-card"><i class="fa-brands fa-rust"></i> Rust</div>
-                    <div class="skill-card"><i class="devicon-c-line-wordmark"></i> C</div>
-                    <div class="skill-card"><i class="devicon-cplusplus-plain"></i> C++</div>
-                    <div class="skill-card"><i class="devicon-csharp-line-wordmark"></i> C#</div>
-                    <div class="skill-card"><i class="devicon-bash-plain"></i> bash/zsh</div>
-                    <div class="skill-card"><i class="devicon-linux-plain"></i> Linux</div>
-                    <div class="skill-card"><i class="devicon-godot-plain"></i> Godot</div>
-                    <div class="skill-card"><i class="fa-brands fa-figma"></i> Figma</div>
-                    <div class="skill-card"><i class="fa-brands fa-docker"></i> Docker</div>
-                    <div class="skill-card"><i class="fa-solid fa-database"></i> MySQL</div>
-                    <div class="skill-card"><i class="devicon-unifiedmodelinglanguage-plain"></i> StarUML</div>
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anis Timur Shayk's personal/professional portfolio website showcasing skills, projects, blog posts, and journey as a software developer.">
+    <meta name="keywords" content="Anis Timur Shayk, Software Developer, Portfolio, Projects, Skills, Web Development, Software Engineer, Website">
+    <meta name="author" content="Anis Timur Shayk">
+    <title>atshayk | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/97cadbde70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+    <nav class="terminal-nav">
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="projects.html">Projects</a>
+            <a href="more.html">More...</a>
+        </nav>
+
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+            <span class="terminal-title">~/atshayk.github.io/index/</span>
+        </div>
+
+        <div class="terminal-body">
+            <div class="terminal-content">
+                <h2><i class="fa-solid fa-triangle-exclamation"></i> the website is under construction! </h2>
+
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
                 </div>
-                </section>
-
-                <section id="spotlight" class="about-section">
-                <h2>Project Spotlight</h2>
-                <p>Currently learning AWS and implementing cloud features in my freelance project. Will share more details further down development</p>
-                </section>
-
-                <section id="timeline">
-                <h2>My Journey</h2>
+                <h1>Hey! I'm Anis Timur Shayk.</h1>
+                <p> > I'm currently a freelance software engineer, specialised in backend engineering and iOS app development.</p>
+                <p> > Based at Hyderabad, India. </p>
+                <p> > I'm actively looking for work in the industry at the moment, so any leads will be helpful! </p>
+        
+                <div class="contact-info">
+                    <a href="mailto:anistimurshayk@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+                    <a href="https://github.com/atshayk" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
+                    <a href="https://linkedin.com/in/atshayk" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                </div>
+                
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">ls skills</span>
+                </div>
+                <div class="skills-grid">
+                </div>
+                
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat journey.log</span>
+                </div>
                 <div class="timeline">
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2019</h3>
-                        <p>Started exploring <i class="fab fa-python"></i>Python and <i class="fa-solid fa-database"></i>SQL, laying the groundwork with computer science fundamentals.</p>
-                    </div>
+                        <div class="timeline-year">2019</div>
+                        <div class="timeline-desc">Started with Python and SQL</div>
                     </div>
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2020</h3>
-                        <p>Dove into APIs and data analytics with NumPy/Pandas. </p>
-                        <p>Built a <i class="fa-brands fa-discord"></i>Discord bot and gained hands-on exposure to DevOps practices.</p>
-                        <p> Oh, and uhh... <i class="fa-solid fa-virus-covid"></i> COVID-19 happened.</p>
-                    </div>
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-desc">APIs, data analytics, Discord bot</div>
                     </div>
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2021</h3>
-                        <p>Enrolled full-time in a <i class="fa-solid fa-laptop-code"></i>Computer Science degree program, committed to becoming a software engineer.</p>
-                    </div>
+                        <div class="timeline-year">2021</div>
+                        <div class="timeline-desc">Enrolled in CS degree program</div>
                     </div>
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2022</h3>
-                        <p>Focused deeply on my second year of Computer Science, learning DSA and core subjects.</p>
-                    </div>
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-desc">Focused on DSA and core subjects</div>
                     </div>
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                    <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2023</h3>
-                        <p>Served as Vice President of my college debate society, organizing informative discussions on today's problems.</p>
-                        <p><i class="fa-solid fa-trophy"></i> Won the Smart India Hackathon (Software Category) — developed an <i class="fab fa-android"></i>Android app with my team in just 16 hours.</p>
-                    </div>
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-desc">VP of debate society, SIH winner</div>
                     </div>
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2024</h3>
-                        <p> Learned to value <b>consistency</b> over <b>intensity</b> while staying in touch with tech and creative work.</p>
-                    </div>
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-desc">Valuing consistency over intensity</div>
                     </div>
                     <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>2025</h3>
-                        <p>Graduating with a mission to create social impact through tech.</p>
-                        <p>Sharpening my full-stack skills and ready for a fresh start.</p>
-                        <p>Freelancing for private clients.</p>
-                    </div>
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-desc">Graduating, sharpening full-stack skills</div>
                     </div>
                 </div>
-                </section>
-
-                <section id="cta">
-                <h2>Let's Build Something Cool</h2>
-                <p>If you've got an idea, project, or just want to vibe, hit me up.</p>
-                <a class="cta-button" href="contact.html">Contact Me</a>
-                </section>
-            </main>
-        <footer>
-            <p><i class="fa-solid fa-copyright"></i>2025 Anis Timur Shayk. All rights reserved. </p>
-            <a href="https://notbyai.fyi"><img src="assets/Developed-By-a-Human-Not-By-AI-Badge-black.svg" alt="Written by a Human, Not by AI"></a>
-        </footer>
-    </body>
+                
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">echo "Contact me on email!"</span>
+                </div>
+                <div class="cta-section">
+                    <a class="cta-button" href="contact.html">Contact Me</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="terminal-footer">
+        <div class="footer-content">
+            <span class="footer-name">©2025 Anis Timur Shayk. Icons by <i class="fa-solid fa-font-awesome"></i>FontAwesome.</span>
+            <div class="social-links">
+                <i class="fa-brands fa-square-instagram"></i>
+                <a href="https://github.com/atshayk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/atshayk" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
