@@ -471,20 +471,7 @@ blockquote:hover {
   transition: border-color 0.3s ease;
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Responsive */
+/* Fix for footer alignment on mobile */
 @media (max-width: 768px) {
   .terminal-window {
     margin: 10px;
@@ -515,5 +502,86 @@ blockquote:hover {
   
   .social-links a {
     font-size: 24px;
+  }
+  
+  /* Ensure footer width matches terminal window */
+  .terminal-footer {
+    margin: 0 10px 20px;
+    width: calc(100% - 20px);
+  }
+}
+
+/* Improved responsive adjustments for projects */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fixed positioning for copy notification on mobile */
+.email-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-notification {
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a2535;
+  color: #79B8FF;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #30363d;
+  white-space: nowrap;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.copy-notification::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1a2535 transparent transparent transparent;
+}
+
+/* Additional fix for mobile touch targets */
+.contact-info a {
+  color: #79B8FF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0; /* Better touch target */
+}
+
+/* Ensure terminal window and footer have consistent width */
+.terminal-window, .terminal-footer {
+  max-width: 900px;
+  width: calc(100% - 40px); /* Account for body padding */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile-specific width adjustment */
+@media (max-width: 768px) {
+  .terminal-window, .terminal-footer {
+    width: calc(100% - 20px);
+    margin: 10px;
   }
 }
