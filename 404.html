@@ -3,71 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="Page not found - Anis Timur Shayk's portfolio">
+  <meta name="author" content="Anis Timur Shayk">
   <title>404 - Page Not Found</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://kit.fontawesome.com/97cadbde70.js" crossorigin="anonymous"></script>
   <style>
     .not-found {
-      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-color: rgb(18, 24, 39);
-      color: lightskyblue;
-      padding: 40px 20px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d1520; /* Darker blue */
+      color: #e5e5e5;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 30px 0;
     }
 
     .not-found h1 {
-      font-size: 6rem;
+      font-size: 4rem;
       margin-bottom: 10px;
-      color: orangered;
+      color: #f8a059;
     }
 
     .not-found h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
     }
 
     .not-found p {
-      color: lightgray;
+      color: #c9d1d9;
       max-width: 500px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
     }
 
     .not-found a {
       display: inline-block;
-      padding: 12px 24px;
-      background-color: lightskyblue;
-      color: rgb(18, 24, 39);
+      padding: 10px 20px;
+      background-color: #79B8FF;
+      color: #0d1117;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 4px;
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
 
     .not-found a:hover {
-      background-color: orangered;
-      color: white;
+      background-color: #f8a059;
+      color: #0d1117;
     }
 
     .not-found .icon {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      color: lightskyblue;
+      font-size: 6rem;
+      margin-bottom: 15px;
+      color: #79B8FF;
+    }
+    
+    /* Reduce overall height */
+    .terminal-window {
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    
+    .terminal-body {
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="not-found">
-    <div class="icon"><i class="fas fa-ghost"></i></div>
-    <h1>404</h1>
-    <h2>Boo! Page not found.</h2>
-    <p>Looks like you took a wrong turn in the interwebs. This page doesn't exist, or perhaps it never did...</p>
-    <a href="index.html">Go Back Home</a>
-  </div>
+   <nav class="terminal-nav">
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="projects.html">Projects</a>
+            <a href="more.html">More...</a>
+    </nav>
+
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+            <span class="terminal-title">~/atshayk.github.io/404/</span>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="terminal-content">
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">Error encountered!</span>
+                </div>
+                
+                <div class="not-found">
+                  <div class="icon"><i class="fas fa-ghost"></i></div>
+                  <h1>404</h1>
+                  <h2>Boo! Page not found.</h2>
+                  <p>Looks like you took a wrong turn in the interwebs. This page doesn't exist, or perhaps it never did...</p>
+                  <a href="index.html">Go Back Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ <footer class="terminal-footer">
+    <div class="footer-content">
+        <span class="footer-name">©2025 Anis Timur Shayk. Icons by 
+            <a href="https://fontawesome.com" target="_blank" class="footer-link"><i class="fa-solid fa-font-awesome"></i> Font Awesome</a>
+        </span>
+        <div class="social-links">
+            <a href="https://github.com/atshayk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/atshayk" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

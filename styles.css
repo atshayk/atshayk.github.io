@@ -138,7 +138,7 @@ h1 {
 
 .skill-card:hover {
   background-color: #223045; /* Slightly lighter on hover */
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   color: #79B8FF;
 }
 
@@ -255,6 +255,49 @@ body {
 
 .terminal-nav a:hover {
   color: #FFB380;
+}
+
+.footer-link {
+    color: #79B8FF;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #f8a059; /* Soft orange on hover */
+}
+
+.email-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copy-notification {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a2535;
+    color: #79B8FF;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid #30363d;
+    white-space: nowrap;
+    z-index: 100;
+}
+
+.copy-notification::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1a2535 transparent transparent transparent;
 }
 
 /* Responsive */

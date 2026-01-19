@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Anis Timur Shayk's personal/professional portfolio website showcasing skills, projects, blog posts, and journey as a software developer.">
@@ -19,7 +18,7 @@
             <a href="blog.html">Blog</a>
             <a href="projects.html">Projects</a>
             <a href="more.html">More...</a>
-        </nav>
+    </nav>
 
     <div class="terminal-window">
         <div class="terminal-header">
@@ -43,7 +42,11 @@
                 <p> > I'm actively looking for work in the industry at the moment, so any leads will be helpful! </p>
         
                 <div class="contact-info">
-                    <a href="mailto:anistimurshayk@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+                    <!-- Updated email link to copy email address -->
+                    <a href="#" id="email-link" onclick="copyEmail(event)" class="email-container">
+                        <i class="fa-solid fa-at"></i></i>Email
+                        <span class="copy-notification" id="copy-notification"><i class="fa-solid fa-copy"></i> Copied!</span>
+                    </a>
                     <a href="https://github.com/atshayk" target="_blank"><i class="fab fa-github-alt"></i>GitHub</a>
                     <a href="https://linkedin.com/in/atshayk" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
                 </div>
@@ -52,7 +55,19 @@
                     <span class="prompt">$</span>
                     <span class="command">ls skills</span>
                 </div>
+                <p> > primary </p>
                 <div class="skills-grid">
+                    <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="skill-card"><i class="fa-brands fa-java"></i> Java</div>
+                    <div class="skill-card"><i class="fa-brands fa-swift"></i> Swift</div>
+                    <div class="skill-card"><i class="fa-brands fa-js"></i> TypeScript</div>
+                </div>
+                <p> > secondary </p>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
+                    <div class="skill-card"></i> Docker</div>
+                    <div class="skill-card">></i> Figma</div>
+                    <div class="skill-card">></i> Figma</div>
                 </div>
                 
                 <div class="prompt-line">
@@ -66,11 +81,11 @@
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2020</div>
-                        <div class="timeline-desc">APIs, data analytics, Discord bot</div>
+                        <div class="timeline-desc">APIs, Discord bot, deployment</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2021</div>
-                        <div class="timeline-desc">Enrolled in CS degree program</div>
+                        <div class="timeline-desc">Enrolled in CS program</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2022</div>
@@ -78,15 +93,15 @@
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2023</div>
-                        <div class="timeline-desc">VP of debate society, SIH winner</div>
+                        <div class="timeline-desc">VP of the Debate Society, Hackathon Winner for SIH2023</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2024</div>
-                        <div class="timeline-desc">Valuing consistency over intensity</div>
+                        <div class="timeline-desc">Learnt to use DevOps tools like Docker</div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2025</div>
-                        <div class="timeline-desc">Graduating, sharpening full-stack skills</div>
+                        <div class="timeline-desc">Graduated and started working on freelance projects</div>
                     </div>
                 </div>
                 
@@ -94,23 +109,49 @@
                     <span class="prompt">$</span>
                     <span class="command">echo "Contact me on email!"</span>
                 </div>
-                <div class="cta-section">
-                    <a class="cta-button" href="contact.html">Contact Me</a>
-                </div>
-                </div>
             </div>
         </div>
     </div>
     
-    <footer class="terminal-footer">
-        <div class="footer-content">
-            <span class="footer-name">©2025 Anis Timur Shayk. Icons by <i class="fa-solid fa-font-awesome"></i>FontAwesome.</span>
-            <div class="social-links">
-                <i class="fa-brands fa-square-instagram"></i>
-                <a href="https://github.com/atshayk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/atshayk" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+ <footer class="terminal-footer">
+    <div class="footer-content">
+        <span class="footer-name">©2025 Anis Timur Shayk. Icons by 
+            <a href="https://fontawesome.com" target="_blank" class="footer-link"><i class="fa-solid fa-font-awesome"></i> Font Awesome</a>
+        </span>
+        <div class="social-links">
+            <a href="https://github.com/atshayk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/atshayk" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- Add script for copying email -->
+<script>
+function copyEmail(event) {
+    event.preventDefault();
+    const email = "anistimurshayk@gmail.com";
+    const notification = document.getElementById("copy-notification");
+
+    navigator.clipboard.writeText(email).then(() => {
+        notification.style.display = "inline-block";
+        setTimeout(() => {
+            notification.style.display = "none";
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+        // Fallback for older browsers
+        const textArea = document.createElement("textarea");
+        textArea.value = email;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        notification.style.display = "inline-block";
+        setTimeout(() => {
+            notification.style.display = "none";
+        }, 2000);
+    });
+}
+</script>
 </body>
 </html>

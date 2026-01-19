@@ -3,54 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog</title>
+  <meta name="description" content="Blog posts by Anis Timur Shayk on software development, tech insights, and personal experiences.">
+  <meta name="keywords" content="Anis Timur Shayk, Blog, Software Development, Tech Insights, Programming">
+  <meta name="author" content="Anis Timur Shayk">
+  <title>atshayk | Blog</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/97cadbde70.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html"><i class='fas fa-home'></i> Home</a></li>
-      <li><a href="about.html"><i class='fas fa-smile'></i> About</a></li>
-      <li><a href="projects.html"><i class='fas fa-tools'></i> Projects</a></li>
-      <li><a href="blog.html" class="active"><i class='fas fa-newspaper'></i> Blog</a></li>
-      <li><a href="contact.html"><i class='fas fa-mug-hot'></i> Contact</a></li>
-    </ul>
-  </nav>
+   <nav class="terminal-nav">
+      <a href="index.html">Index</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="more.html">More...</a>
+    </nav>
 
-  <main>
-    <section class="about-section">
-      <h1><i class='fas fa-newspaper'></i> My Blog</h1>
-      <p style="color: lightgray;">Thoughts, tips, and stories from the keyboard.</p>
-    </section>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="header-button red"></div>
+            <div class="header-button yellow"></div>
+            <div class="header-button green"></div>
+            <span class="terminal-title">~/atshayk.github.io/blog/</span>
+        </div>
 
-    <!-- Blog Articles -->
-    <section class="about-section">
-      <article class="blog-post">
-        <h2>The Day I Broke Production</h2>
-        <p class="meta">By Anis Timur Shayk | <time datetime="2024-09-01">September 1, 2024</time></p>
-        <p>It started like any other deploy... until it wasn't. Here's how I accidentally brought down our dev server and what I learned cleaning up the mess.</p>
-        <a href="posts/post-1.html">Read More</a>
-      </article>
+        <div class="terminal-body">
+            <div class="terminal-content">
+                <h2><i class="fa-solid fa-triangle-exclamation"></i> the website is under construction! </h2>
 
-      <article class="blog-post">
-        <h2>Why I Switched to Godot</h2>
-        <p class="meta">By Anis Timur Shayk | <time datetime="2024-11-20">November 20, 2024</time></p>
-        <p>Unity fatigue, pricing drama, and a growing indie dev scene pulled me toward Godot. Here's what I like about it so far, and what still trips me up.</p>
-        <a href="posts/post-2.html">Read More</a>
-      </article>
+                <div class="prompt-line">
+                    <span class="prompt">$</span>
+                    <span class="command">cat blog.html</span>
+                </div>
+                
+              <h1><i class="fa-solid fa-newspaper"></i> blog.</h1>
 
-      <article class="blog-post">
-        <h2>Lessons from the Hackathon Floor</h2>
-        <p class="meta">By Anis Timur Shayk | <time datetime="2023-08-12">August 12, 2023</time></p>
-        <p>In 16 hours, we built an Android app, broke a few rules, and somehow won a national hackathon. These are the key lessons I walked away with.</p>
-        <a href="posts/post-3.html">Read More</a>
-      </article>
-    </section>
-  </main>
+                <section class="blog-section">
 
-  <footer>
-    <p><i class="fa-solid fa-copyright"></i>2025 Anis Timur Shayk. All rights reserved.</p>
-  </footer>
+                  <article class="blog-post">
+                    <h2>The Day I Broke Production</h2>
+                    <time datetime="2024-09-01">September 1, 2024</time></p>
+                    <p>It started like any other deploy... until it wasn't. Here's how I accidentally brought down our dev server and what I learned cleaning up the mess.</p>
+                    <a href="posts/post-1.html">Read More</a>
+                  </article>
+
+                  <article class="blog-post">
+                    <h2>Why I Switched to Godot</h2>
+                    <time datetime="2024-11-20">November 20, 2024</time></p>
+                    <p>Unity fatigue, pricing drama, and a growing indie dev scene pulled me toward Godot. Here's what I like about it so far, and what still trips me up.</p>
+                    <a href="posts/post-2.html">Read More</a>
+                  </article>
+
+                  <article class="blog-post">
+                    <h2>Lessons from the Hackathon Floor</h2>
+                    <time datetime="2023-08-12">August 12, 2023</time></p>
+                    <p>In 16 hours, we built an Android app, broke a few rules, and somehow won a national hackathon. These are the key lessons I walked away with.</p>
+                    <a href="posts/post-3.html">Read More</a>
+                  </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+ <footer class="terminal-footer">
+    <div class="footer-content">
+        <span class="footer-name">©2025 Anis Timur Shayk. Icons by 
+            <a href="https://fontawesome.com" target="_blank" class="footer-link"><i class="fa-solid fa-font-awesome"></i> Font Awesome</a>
+        </span>
+        <div class="social-links">
+            <a href="https://github.com/atshayk" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/atshayk" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
