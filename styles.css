@@ -67,9 +67,9 @@ h1 {
   margin-right: 8px;
 }
 
-.red { background-color: #ff5f56; }
-.yellow { background-color: #ffbd2e; }
-.green { background-color: #27c93f; }
+.red { background-color: #fb4340; }
+.yellow { background-color: #e2bc00; }
+.green { background-color: #27ee44; }
 
 .terminal-title {
   color: #8b949e;
@@ -584,4 +584,17 @@ blockquote:hover {
     width: calc(100% - 20px);
     margin: 10px;
   }
+}
+
+/* Content link styling */
+.content-link {
+  color: #79B8FF;
+  text-decoration: none;
+  border-bottom: 2px solid #79B8FF;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.content-link:hover {
+  color: #f8a059;
+  border-bottom: 1px solid #f8a059;
 }
