@@ -2,13 +2,8 @@
 
 <h3> dependecies used </h3>
 
-- Font Awesome Version 6.7.2, Web
-- NotByAI Badge
+- Icons from Font Awesome Version 7.0, Web
 
 <h3> Todo </h3>
-
-- ~~Design Overhaul: I want a TUI (Terminal User Interface) type of look. It will be user-friendly.~~
-- Adding a blog module
-- Adding the uterrances comment section module for the blog.
-- ~~Expect this in the next update: version Beta 2.0.~~ 2.1
-- ~~Tentative release: 17th January 2026~~ released 19th January 2026
+- Add a blog module
+- Add the uterrances comment section module for the blog.
