@@ -1,0 +1,114 @@
+/* Font Face */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('assets/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}  
+
+
+/* General Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0e17;
+  font-family: 'JetBrains Mono', monospace;
+  color: #e5e5e5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 15px 0 10px 0;
+}
+
+/* Content and Lists */
+.terminal-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.terminal-content ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  color: #c9d1d9;
+}
+
+.terminal-content ul li:before {
+  content: "▶";
+  color: #79B8FF;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.terminal-content ul li {
+  line-height: 1.6;
+}
+
+.terminal-content h3 {
+  color: #79B8FF;
+  margin: 25px 0 10px 0;
+}
+
+.terminal-content h3:first-of-type {
+  margin-top: 20px;
+}
+
+/* Blockquote styling */
+blockquote {
+  margin: 25px 0;
+  padding: 15px 20px;
+  border-left: 4px solid #79B8FF; /* Blue accent border */
+  background-color: #1a2535; /* Dark blue background */
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #c9d1d9;
+  position: relative;
+}
+
+blockquote:before {
+  content: "";
+  font-size: 3rem;
+  color: #79B8FF;
+  opacity: 0.3;
+  position: absolute;
+  right: 20px;
+  top: -10px;
+}
+
+blockquote:hover {
+  border-left-color: #f8a059; /* Orange border on hover */
+  transition: border-color 0.3s ease;
+}
+
+/* Content link styling */
+.content-link {
+  color: #79B8FF;
+  text-decoration: none;
+  border-bottom: 2px solid #79B8FF;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.content-link:hover {
+  color: #f8a059;
+  border-bottom: 1px solid #f8a059;
+}

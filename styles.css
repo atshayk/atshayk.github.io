@@ -15,7 +15,7 @@
 }  
 
 
-/* Terminal Styles */
+/* Terminal Style */
 
 * {
   margin: 0;
@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: #0a0e17; /* Darker blue background */
+  background-color: #0a0e17;
   font-family: 'JetBrains Mono', monospace;
   color: #e5e5e5;
   padding: 20px;
@@ -34,12 +34,12 @@ body {
 }
 
 h1 {
-  margin: 15px 0 10px 0; /* top right bottom left */
+  margin: 15px 0 10px 0;
 }
 
 /* Terminal Window */
 .terminal-window {
-  background-color: #0d1520; /* Darker blue */
+  background-color: #0d1520;
   border-radius: 8px;
   border: 1px solid #30363d;
   flex: 1;
@@ -52,7 +52,7 @@ h1 {
 }
 
 .terminal-header {
-  background-color: #1a2535; /* Darker blue header */
+  background-color: #1a2535;
   padding: 10px 15px;
   display: flex;
   align-items: center;
@@ -66,10 +66,6 @@ h1 {
   border-radius: 50%;
   margin-right: 8px;
 }
-
-.red { background-color: #fb4340; }
-.yellow { background-color: #e2bc00; }
-.green { background-color: #27ee44; }
 
 .terminal-title {
   color: #8b949e;
@@ -116,7 +112,7 @@ h1 {
 }
 
 .contact-info a:hover {
-  color: #f8a059; /* Soft orange instead of yellow */
+  color: #f8a059;
 }
 
 .skills-grid {
@@ -133,13 +129,13 @@ h1 {
   text-align: center;
   font-size: 14px;
   border: 1px solid #30363d;
-  color: #e5e5e5;
+  color: #79B8FF;
 }
 
 .skill-card:hover {
-  background-color: #223045; /* Slightly lighter on hover */
+  background-color: #223045; 
   transform: translateY(-4px);
-  color: #79B8FF;
+  color: #f8a059;
 }
 
 .timeline {
@@ -154,7 +150,7 @@ h1 {
 }
 
 .timeline-year {
-  color: #f8a059; /* Soft orange for timeline years */
+  color: #f8a059;
   font-weight: bold;
   min-width: 60px;
   margin-right: 15px;
@@ -188,6 +184,7 @@ h1 {
 }
 
 /* Terminal Footer */
+
 .terminal-footer {
     max-width: 900px;
     margin: 0 auto 20px;
@@ -195,7 +192,7 @@ h1 {
 }
 
 .footer-content {
-    background-color: #0d1520; /* Darker blue to match terminal */
+    background-color: #0d1520;
     border-radius: 8px;
     padding: 15px 20px;
     display: flex;
@@ -223,13 +220,13 @@ h1 {
 }
 
 .social-links a:hover {
-    color: #FFB380; /* Soft orange on hover */
+    color: #FFB380;
 }
 
 /* Minimal Navigation Bar */
 body {
   background-color: #0a0e17;
-  font-family: 'JetBrains Mono', monospace; /* Changed to JetBrains Mono */
+  font-family: 'JetBrains Mono', monospace;
   color: #e5e5e5;
   padding: 20px;
   display: flex;
@@ -238,12 +235,13 @@ body {
 }
 
 /* Updated Navigation Bar */
+
 .terminal-nav {
   padding: 2px;
   display: flex;
-  justify-content: center; /* Center the navigation */
+  justify-content: center;
   gap: 25px;
-  background-color: transparent; /* Transparent background */
+  background-color: transparent;
 }
 
 .terminal-nav a {
@@ -263,7 +261,7 @@ body {
 }
 
 .footer-link:hover {
-    color: #f8a059; /* Soft orange on hover */
+    color: #f8a059;
 }
 
 .email-container {
@@ -567,7 +565,7 @@ blockquote:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 0; /* Better touch target */
+  padding: 5px 0;
 }
 
 /* Ensure terminal window and footer have consistent width */
