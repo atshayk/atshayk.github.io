@@ -6,18 +6,21 @@
     <meta name="description" content="Anis Timur Shayk's personal/professional portfolio website showcasing skills, projects, blog posts, and journey as a software developer.">
     <meta name="keywords" content="Anis Timur Shayk, Software Developer, Portfolio, Projects, Skills, Web Development, Software Engineer, Website">
     <meta name="author" content="Anis Timur Shayk">
-    <title>Anis Timur Shayk</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>atshayk</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <script src="https://kit.fontawesome.com/97cadbde70.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
 
     <nav class="terminal-nav">
-            <a href="about.html">About</a>
-            <a href="blog.html">Blog</a>
-            <a href="projects.html">Projects</a>
-            <a href="more.html">More...</a>
+            <a href="index.html">index</a>
+            <a href="html/about.html">about</a>
+            <a href="html/blog.html">blog</a>
+            <a href="html/projects.html">projects</a>
     </nav>
 
     <div class="terminal-window">
@@ -30,20 +33,13 @@
 
         <div class="terminal-body">
             <div class="terminal-content">
-
-                <div class="prompt-line">
-                    <span class="prompt">$</span>
-                    <span class="command">whoami</span>
-                </div>
                 <h1>Hey! I'm Anis Timur Shayk.</h1>
-                <p> > I'm an Android developer.</p>
-                <p> > Based at Hyderabad, India. </p>
-                <p> > I'm actively looking for work in the industry at the moment, so any leads will be helpful! </p>
-        
-                <div class="prompt-line">
-                    <span class="prompt">$</span>
-                    <span class="command">ls socials</span>
-                </div>
+                <ul>
+                      <li>I'm an Android and Flutter developer.</li>
+                      <li>Based in Hyderabad, India.</li>
+                      <li>Currently open to new opportunities!</li>
+                </ul>      
+
                 <div class="contact-info">
                     <a href="#" id="email-link" onclick="copyEmail(event)" class="email-container">
                         <i class="fa-solid fa-at"></i></i>Email
@@ -53,83 +49,55 @@
                     <a href="https://linkedin.com/in/atshayk" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
                 </div>
                 
-                <div class="prompt-line">
-                    <span class="prompt">$</span>
-                    <span class="command">ls skills</span>
-                </div>
-                <p> > core skills </p>
+                <h3> My Primary Skills </h3>
                 <div class="skills-grid">
-                    <div class="skill-card"><i class="fa-brands fa-android"></i> Kotlin</div>
-                    <div class="skill-card"><i class="fa-brands fa-java"></i> Java</div>
-                    <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
-                    <div class="skill-card"><i class="fa-brands fa-swift"></i> Swift</div>
-                    <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+                    <div class="skill-card"><i class="devicon-androidstudio-plain"></i> Android Studio IDE</div>
+                    <div class="skill-card"><i class="devicon-kotlin-plain"></i></i> Kotlin</div>
+                    <div class="skill-card"><i class="devicon-jetpackcompose-plain"></i> Jetpack Compose</div>
+                    <div class="skill-card"><i class="devicon-flutter-plain"></i> Flutter</div>
+                    <div class="skill-card"><i class="devicon-java-plain"></i> Java</div>
                 </div>
-                <p> > auxiliary tools </p>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fa-brands fa-git-alt"></i> Git</div>
-                    <div class="skill-card"></i><i class="fa-brands fa-docker"></i> Docker</div>
-                    <div class="skill-card"><i class="fa-brands fa-figma"></i> Figma</div>
-                    <div class="skill-card"><i class="fa-solid fa-database"></i> MySQL</div>
-                    <div class="skill-card"><i class="fa-brands fa-linux"></i> Linux</div>
-                </div>
-                
-                <div class="prompt-line">
-                    <span class="prompt">$</span>
-                    <span class="command">cat journey.log</span>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2019</div>
-                        <div class="timeline-desc">Started with Python and SQL</div>
+
+                <h3> Featured Projects </h3>
+                <section class="projects-section">
+                  <div class="projects-grid">
+
+                    <div class="project-card">
+                        <a href="https://github.com/atshayk/pokedex" class="project-link" target="GitHub Repo!">
+                      <div class="project-header">
+                        <h2 class="project-title">PokéDex App</h2>
+                        <span class="project-date">July 2026</span>
+                      </div>
+                      <p class="project-description">Modern Android application built in Kotlin with Jetpack Compose.</p>
+                      <p class="project-description">Uses essential libraries such as Hilt, RoomDB, Retrofit, Firebase, Google Maps API, etc</p>
+                      <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Jetpack Compose</span>
+                        <span class="tag">Google Maps API</span>
+                      </div>
+                      </a>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2020</div>
-                        <div class="timeline-desc">APIs, Discord bot, deployment</div>
+
+                    <div class="project-card">
+                        <a href="https://github.com/atshayk/flutter-widget-cookbook" class="project-link" target="GitHub Repo!">
+                      <div class="project-header">
+                        <h2 class="project-title">Flutter Widget Cookbook</h2>
+                        <span class="project-date">June 2026</span>
+                      </div>
+                      <p class="project-description">A simple Flutter application that shows different kinds of widgets.</p>
+                      <p class="project-description">Uses Riverpod and Dio.</p>
+                      <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Riverpod</span>
+                        <span class="tag">Dio</span>
+                        <span class="tag">Crossplatform</span>
+                      </div>
+                      </a>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2021</div>
-                        <div class="timeline-desc">Enrolled in CS program</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2022</div>
-                        <div class="timeline-desc">Focused on DSA and core subjects</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2023</div>
-                        <div class="timeline-desc">VP of the Debate Society, Hackathon Winner for SIH2023</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2024</div>
-                        <div class="timeline-desc">Learnt to use DevOps tools like Docker</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2025</div>
-                        <div class="timeline-desc">Graduated and started learning Android development</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2026</div>
-                        <div class="timeline-desc">Mastering Android Studio!</div>
-                    </div>
-                </div>
-                
-                <div class="prompt-line">
-                    <span class="prompt">$</span>
-                    <span class="command">help</span>
-                </div>
-                <p>This is my personal website.</p>
-                <p>It consists of:</p>
-                <ul>
-                    <li>Index (this page)</li>
-                    <li>About</li>
-                    <li>Blog (Work In Progress)</li>
-                    <li>Projects</li>
-                    <li>More...</li>
-                <p>Please feel free to explore by clicking/tapping around.</p>
-                <p>The website is supported on mobile.</p>
-                <div class="prompt-line">
-                                  <span class="prompt">$</span>
-                                  <span class="command">_</span>
+
+                  </div>
+                </section>
                 </div>
             </div>
         </div>
