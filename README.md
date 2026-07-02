@@ -1,5 +1,5 @@
 ![Beta](https://img.shields.io/badge/status-beta-blue.svg)
-![VERSION](https://img.shields.io/badge/version-2.2-green.svg)
+![VERSION](https://img.shields.io/badge/version-3.0-green.svg)
 ---
 
 ## What is this?
